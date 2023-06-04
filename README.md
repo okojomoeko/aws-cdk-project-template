@@ -1,4 +1,15 @@
-# Welcome to your CDK TypeScript project
+# aws-cdk-project-template
+
+AWS CDKのプロジェクトテンプレート。下記ツールを導入。
+
+- eslint
+- prettier
+- lint-staged
+- husky
+
+---
+
+##
 
 You should explore the contents of this project. It demonstrates a CDK app with an instance of a stack (`AwsCdkProjectTemplateStack`)
 which contains an Amazon SQS queue that is subscribed to an Amazon SNS topic.
