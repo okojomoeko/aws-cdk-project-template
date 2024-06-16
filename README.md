@@ -4,6 +4,7 @@ AWS CDKのプロジェクトテンプレート。下記ツールを導入。
 
 - eslint
 - prettier
+- biome
 - lint-staged
 - husky
 

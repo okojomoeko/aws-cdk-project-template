@@ -1,16 +1,20 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
-	"name": "AWS CDK & SAM & LocalStack",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"build": {
-		"dockerfile": "Dockerfile"
-	},
-	"mounts": [
-		{"source": "${localEnv:HOME}/.aws", "target": "/home/node/.aws","type": "bind"}
-	],
-	"runArgs": ["--platform=linux/amd64"],
-	"features": {
+  "name": "AWS CDK & SAM & LocalStack",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "mounts": [
+    {
+      "source": "${localEnv:HOME}/.aws",
+      "target": "/home/node/.aws",
+      "type": "bind"
+    }
+  ],
+  "runArgs": ["--platform=linux/amd64"],
+  "features": {
     "ghcr.io/devcontainers/features/aws-cli:1": {},
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
     "ghcr.io/devcontainers-contrib/features/amplify-cli:2": {},
@@ -18,20 +22,20 @@
     "ghcr.io/devcontainers-contrib/features/aws-eb-cli:1": {},
     "ghcr.io/devcontainers-contrib/features/localstack:2": {},
     "ghcr.io/eitsupi/devcontainer-features/jq-likes:2": {},
-    "ghcr.io/customink/codespaces-features/sam-cli:1": {},
+    "ghcr.io/customink/codespaces-features/sam-cli:1": {}
   },
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip install awscli-local git-remote-codecommit; npm install -g aws-cdk-local"
-	// Configure tool-specific properties.
-	// "customizations": {},
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "pip install awscli-local git-remote-codecommit; npm install -g aws-cdk-local"
+  // Configure tool-specific properties.
+  // "customizations": {},
 
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
 }

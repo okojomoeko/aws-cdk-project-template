@@ -7,7 +7,7 @@ test('SQS Queue and SNS Topic Created', () => {
   // WHEN
   const stack = new AwsCdkProjectTemplate.AwsCdkProjectTemplateStack(
     app,
-    'MyTestStack'
+    'MyTestStack',
   );
   // THEN
 

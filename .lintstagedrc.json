@@ -1,6 +1,6 @@
 {
   "*.{js,jsx,ts,tsx}": [
-    "eslint --fix",
-    "prettier --write"
+    "npx @biomejs/biome lint --fix",
+    "npx @biomejs/biome format --write"
   ]
 }
