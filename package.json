@@ -16,7 +16,7 @@
   "devDependencies": {
     "@biomejs/biome": "^1.8.1",
     "@types/jest": "^29.5.12",
-    "@types/node": "20.14.2",
+    "@types/node": "20.14.3",
     "@typescript-eslint/eslint-plugin": "^7.13.0",
     "@typescript-eslint/parser": "^7.13.0",
     "aws-cdk": "2.146.0",
